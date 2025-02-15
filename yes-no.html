@@ -31,14 +31,7 @@
             if(Response) {
                 document.getElementById('response').textContent = Response;
             }
-            if(sessionStorage.getItem('showTryAgainBtn') === 'true') {
-                let tryBtn = document.createElement('button');
-                tryBtn.innerHTML = 'Please Try Again 😢';
-                tryBtn.addEventListener('click', () => {
-                    window.location.href = 'yesval.html';
-                });
-            }
-
+            Dom.appendChild(tryBtn);
             
         }
     </script>
